@@ -7,7 +7,7 @@ const oauth2Client = new google.auth.OAuth2(
     process.env.GOOGLE_REDIRECT_URL
 );
 
-const code = '4/0AX4XfWgiTPeB7JEThwRaDcIsROlRVF0XZeLY_ONO1ox6yTHYRLYN062NNylidQGusD8ozw';
+const code = '4/0AX4XfWhEawD8ZLO06P7-fCRZjfYf6_fsveVbC0WJHOuEGfeZrKB_WUyoZPhUbJTwU9edmA';
 
 // Generate a url that asks permissions for Gmail scopes
 const GMAIL_SCOPES = [
@@ -23,8 +23,8 @@ const getUrl = async() => {
         access_type: 'offline',
         scope: GMAIL_SCOPES,
     });
+    console.log(url);
 }
-
 
 const getToken = async() => {
     const { tokens } = await oauth2Client.getToken(code);

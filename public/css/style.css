@@ -1485,5 +1485,13 @@ input[type='text'] {
     cursor: pointer;
 }
 
+.message {
+    margin: 0;
+    padding: 10px;
+    background: #ff9000;
+    margin-bottom: 24px;
+    color: white;
+}
+
 
 /*# sourceMappingURL=style.css.map */

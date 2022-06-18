@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
-const { getToken } = require('./public/js/google_auth');
+const { getToken, getUrl } = require('./public/js/google_auth');
 
 const app = express();
 
@@ -14,9 +14,6 @@ app.get('/walter-remache', function(req, res) {
 });
 
 app.post('/', (req, res) => {
-
-
-
     const transport = nodemailer.createTransport({
         service: 'gmail',
         auth: {

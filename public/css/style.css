@@ -1493,5 +1493,13 @@ input[type='text'] {
     color: white;
 }
 
+.message-error {
+    margin: 0;
+    padding: 10px;
+    background: red;
+    margin-bottom: 24px;
+    color: white;
+}
+
 
 /*# sourceMappingURL=style.css.map */

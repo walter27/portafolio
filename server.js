@@ -28,10 +28,14 @@ app.post('/', (req, res) => {
     });
 
     const mailOptions = {
-        from: req.body.email,
-        to: process.env.GOOGLE_GMAIL_ADRESS,
+        from: process.env.GOOGLE_GMAIL_ADRESS,
+        to: process.env.GOOGLE_GMAIL_ADRESS_TO,
         subject: 'Correo portafolio',
-        text: req.body.message
+        text: '',
+        html: `<p>Nombre: ${req.body.name}</p>
+               <p>Correo: ${req.body.email}</p>
+               <p>Mensaje: ${req.body.message}</p>`
+
     }
 
     transport.sendMail(mailOptions, (error, info) => {

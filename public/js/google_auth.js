@@ -7,7 +7,7 @@ const oauth2Client = new google.auth.OAuth2(
     process.env.GOOGLE_REDIRECT_URL
 );
 
-const code = '4/0AX4XfWhEawD8ZLO06P7-fCRZjfYf6_fsveVbC0WJHOuEGfeZrKB_WUyoZPhUbJTwU9edmA';
+const code = '4/0AX4XfWhYix5BtWs-0bpMNomrM_vJVlXI0k_gtHrrIZ-EoEpaw9ThtgUjUX0fVdnWrb0XTA';
 
 // Generate a url that asks permissions for Gmail scopes
 const GMAIL_SCOPES = [
